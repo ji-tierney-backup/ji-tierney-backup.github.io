@@ -4,7 +4,7 @@
 	Author: UIdeck
 	Author URI: https://uideck.com/
 	Support: https://github.com/uideck/
-	Version: 1.0
+	Version: 1.0 
 
 ======== */
 /*===========================
@@ -13,11 +13,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --font: "Inter", sans-serif;
-  --body-color: #637381;
+  --body-color: #000000;
   --heading-color: #212b36;
-  --primary-color: #4B0082;
-  --white: #FFFFFF;
+  --primary-color: #000000;
+  --white: #DAA520;
 }
+
+
+
+.ud-about-content-wrapper {
+  flex: 1; /* Take up 50% of the container */
+  padding-right: 20px; /* Optional: Add some spacing between text and image */
+  overflow: hidden;
+}
+
+.ud-about-content {
+  width: 100%; /* Ensure the content takes up the full width of its container */
+  height: auto;
+}
+
+
+
+.ud-about-image {
+  flex: 1; /* Take up 50% of the container */
+  text-align: right; /* Align the image to the right within its container */
+  
+}
+
 
 body {
   font-family: var(--font);
@@ -32,6 +54,68 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+#contact {
+  background-color: #000000;
+}
+
+#contact h2,
+#contact h5,
+#contact span,
+#contact p {
+  color: white;
+}
+
+#features {
+  background-color: var(--body-color);
+  color: var(--white);
+} 
+
+#about, #faq {
+  background-color: #000000;
+}
+
+.navbar-logo {
+  width: 100px;
+  height: auto;
+}
+
+.ud-about-content p,
+.ud-about-content h2,
+.ud-about-content span {
+  color: white;
+}
+
+
+/* .faq-text {
+  color: white;
+}
+
+.uq-faq-body {
+  color: white;
+} */
+
+.ud-feature-icon  {
+  background-color: white;
+}
+
+.ud-feature-desc, .ud-feature-title {
+  color: white;
+}
+
+.lni-instagram-filled,
+.lni-twitter-filled,
+.lni-facebook-filled {
+  color: white;
+  /* Set the default color */
+}
+
+.lni-instagram-filled:hover,
+.lni-twitter-filled:hover,
+.lni-facebook-filled:hover {
+  color: #DAA520;
+  /* Set the color on hover */
 }
 
 img {
@@ -155,9 +239,15 @@ p {
   background: var(--primary-color);
 }
 
+/* Hover state */
 .ud-main-btn:hover {
-  color: var(--white);
-  background: var(--heading-color);
+  background-color: white !important;
+  /* Change the background color on hover */
+  color: #000000;
+  
+  /* Change the text color on hover */
+  
+  /* Change the border color on hover */
 }
 
 @media (max-width: 767px) {
@@ -178,7 +268,8 @@ p {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: var(--primary-color);
+  background-color: white;
+  /* background: var(--primary-color); */
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -728,7 +819,8 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 14px;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  background: white;
   font-size: 32px;
   color: var(--white);
   position: relative;
@@ -745,7 +837,8 @@ p {
   top: 0;
   left: 0;
   border-radius: 14px;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+    background: white;
   opacity: 0.2;
   z-index: -1;
   -webkit-transform: rotate(23deg);
@@ -829,7 +922,7 @@ p {
 }
 
 .ud-about-content {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .ud-about-content .tag {
@@ -1547,7 +1640,8 @@ p {
 }
 
 .ud-widget .ud-widget-links a:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #DAA520;
   padding-left: 10px;
 }
 
@@ -1612,7 +1706,8 @@ p {
 }
 
 .ud-footer-bottom .ud-footer-bottom-left a:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #DAA520;
 }
 
 .ud-footer-bottom .ud-footer-bottom-right {
