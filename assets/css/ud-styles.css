@@ -16,7 +16,7 @@
   --body-color: #000000;
   --heading-color: #212b36;
   --primary-color: #000000;
-  --white: #DAA520;
+  --white: #DADADA;
 }
 
 
@@ -114,7 +114,7 @@ body {
 .lni-instagram-filled:hover,
 .lni-twitter-filled:hover,
 .lni-facebook-filled:hover {
-  color: #DAA520;
+  color: #414141;
   /* Set the color on hover */
 }
 
@@ -705,6 +705,7 @@ p {
   color: var(--white);
   background: transparent;
   opacity: 0.5;
+  color: black
 }
 
 .ud-hero-brands-wrapper {
@@ -880,6 +881,7 @@ p {
 .ud-about {
   background: #f3f4fe;
   padding: 120px 0;
+  
 }
 
 @media (max-width: 767px) {
@@ -940,6 +942,7 @@ p {
   font-size: 36px;
   line-height: 45px;
   margin-bottom: 30px;
+  color: black;
 }
 
 @media (max-width: 767px) {
@@ -953,6 +956,7 @@ p {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 40px;
+  color: black;
 }
 
 .ud-about-content .ud-main-btn:hover {
@@ -1398,6 +1402,7 @@ p {
 
 .ud-single-team .ud-team-socials a:hover {
   color: var(--primary-color);
+
 }
 
 /* ===== Contact CSS ===== */
@@ -1621,7 +1626,8 @@ p {
 }
 
 .ud-widget .ud-widget-socials a:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #414141;
 }
 
 .ud-widget .ud-widget-title {
@@ -1641,7 +1647,7 @@ p {
 
 .ud-widget .ud-widget-links a:hover {
   /* color: var(--primary-color); */
-  color: #DAA520;
+  color: #414141;
   padding-left: 10px;
 }
 
@@ -1707,7 +1713,7 @@ p {
 
 .ud-footer-bottom .ud-footer-bottom-left a:hover {
   /* color: var(--primary-color); */
-  color: #DAA520;
+  color: #DADADA;
 }
 
 .ud-footer-bottom .ud-footer-bottom-right {
@@ -2474,6 +2480,7 @@ p {
 
 .ud-newsletter-box .ud-newsletter-form .ud-main-btn:hover {
   background: var(--heading-color);
+  color: black;
 }
 
 .ud-newsletter-box .ud-newsletter-form .ud-newsletter-note {
